@@ -1147,6 +1147,8 @@ set for 12V output</text>
 3 - UP / ~DOWN
 2 - ENABLE
 1 - GND</text>
+<text x="162.56" y="12.7" size="2.54" layer="94" font="vector">Author: Charles B. Malloch, PhD</text>
+<text x="251.46" y="-7.62" size="2.54" layer="94" font="vector">1.0</text>
 </plain>
 <instances>
 <instance part="JP1" gate="A" x="50.8" y="53.34" rot="R180"/>
