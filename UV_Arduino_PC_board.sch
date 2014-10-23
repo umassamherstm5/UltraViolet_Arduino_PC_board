@@ -1149,6 +1149,9 @@ set for 12V output</text>
 1 - GND</text>
 <text x="162.56" y="12.7" size="2.54" layer="94" font="vector">Author: Charles B. Malloch, PhD</text>
 <text x="251.46" y="-7.62" size="2.54" layer="94" font="vector">1.0</text>
+<text x="45.72" y="-45.72" size="5.08" layer="94">Change order:
+Add a connector for a string of neopixels or other 
+addressable RGB LEDs - comm pins and 12V? power</text>
 </plain>
 <instances>
 <instance part="JP1" gate="A" x="50.8" y="53.34" rot="R180"/>
