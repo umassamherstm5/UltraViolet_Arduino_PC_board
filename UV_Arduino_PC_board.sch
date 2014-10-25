@@ -1099,6 +1099,9 @@ Grid 5.08 mm&lt;p&gt;
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="X4" library="con-wago-508" deviceset="W237-04P" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="P+7" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1138,7 +1141,7 @@ set for 12V output</text>
   3 - Arduino 12
   2 - Arduino 13
   1 - GND</text>
-<text x="73.66" y="10.16" size="1.778" layer="94">2 - GND
+<text x="66.04" y="-5.08" size="1.778" layer="94">2 - GND
 1 - Vin +12VDC to Arduino</text>
 <text x="50.8" y="157.48" size="1.778" layer="94">INPUT</text>
 <text x="83.82" y="157.48" size="1.778" layer="94">OUTPUT</text>
@@ -1148,15 +1151,20 @@ set for 12V output</text>
 2 - ENABLE
 1 - GND</text>
 <text x="162.56" y="12.7" size="2.54" layer="94" font="vector">Author: Charles B. Malloch, PhD</text>
-<text x="251.46" y="-7.62" size="2.54" layer="94" font="vector">1.0</text>
+<text x="251.46" y="-7.62" size="2.54" layer="94" font="vector">1.1</text>
 <text x="45.72" y="-45.72" size="5.08" layer="94">Change order:
 Add a connector for a string of neopixels or other 
 addressable RGB LEDs - comm pins and 12V? power</text>
+<text x="124.46" y="22.86" size="1.778" layer="94">Lights Control
+4 - DATA
+3 - +5VDC
+2 - GND
+1 - CLOCK</text>
 </plain>
 <instances>
 <instance part="JP1" gate="A" x="50.8" y="53.34" rot="R180"/>
 <instance part="JP2" gate="A" x="152.4" y="152.4"/>
-<instance part="JP3" gate="G$1" x="76.2" y="20.32" rot="R270"/>
+<instance part="JP3" gate="G$1" x="68.58" y="5.08" rot="R270"/>
 <instance part="X1" gate="-1" x="170.18" y="83.82" rot="R180"/>
 <instance part="X1" gate="-2" x="170.18" y="88.9" rot="R180"/>
 <instance part="X1" gate="-3" x="170.18" y="93.98" rot="R180"/>
@@ -1176,15 +1184,21 @@ addressable RGB LEDs - comm pins and 12V? power</text>
 <instance part="GND2" gate="1" x="104.14" y="129.54"/>
 <instance part="GND3" gate="1" x="132.08" y="142.24"/>
 <instance part="P+4" gate="1" x="71.12" y="81.28" rot="MR0"/>
-<instance part="GND4" gate="1" x="60.96" y="25.4"/>
+<instance part="GND4" gate="1" x="60.96" y="12.7"/>
 <instance part="X5" gate="-1" x="233.68" y="63.5" rot="R270"/>
 <instance part="X5" gate="-2" x="228.6" y="63.5" rot="R270"/>
 <instance part="X5" gate="-3" x="223.52" y="63.5" rot="R270"/>
 <instance part="X5" gate="-4" x="218.44" y="63.5" rot="R270"/>
-<instance part="P+5" gate="1" x="83.82" y="40.64"/>
+<instance part="P+5" gate="1" x="76.2" y="25.4"/>
 <instance part="GND5" gate="1" x="66.04" y="76.2"/>
 <instance part="GND6" gate="1" x="233.68" y="43.18"/>
 <instance part="P+6" gate="1" x="208.28" y="68.58" rot="MR0"/>
+<instance part="X4" gate="-1" x="139.7" y="12.7" rot="R270"/>
+<instance part="X4" gate="-2" x="134.62" y="12.7" rot="R270"/>
+<instance part="X4" gate="-3" x="129.54" y="12.7" rot="R270"/>
+<instance part="X4" gate="-4" x="124.46" y="12.7" rot="R270"/>
+<instance part="GND7" gate="1" x="134.62" y="0"/>
+<instance part="P+7" gate="1" x="114.3" y="17.78" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -1247,15 +1261,21 @@ addressable RGB LEDs - comm pins and 12V? power</text>
 <pinref part="JP1" gate="A" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="53.34" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="33.02" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="33.02" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="17.78" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="22.86" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="7.62" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="17.78" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X5" gate="-1" pin="KL"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="233.68" y1="58.42" x2="233.68" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-2" pin="KL"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="134.62" y1="7.62" x2="134.62" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -1270,10 +1290,10 @@ addressable RGB LEDs - comm pins and 12V? power</text>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="22.86" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="7.62" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
-<wire x1="78.74" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="33.02" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="17.78" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -1295,6 +1315,13 @@ addressable RGB LEDs - comm pins and 12V? power</text>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="218.44" y1="53.34" x2="208.28" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="53.34" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+7" gate="1" pin="+5V"/>
+<wire x1="114.3" y1="2.54" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-3" pin="KL"/>
+<wire x1="114.3" y1="2.54" x2="129.54" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="2.54" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1377,6 +1404,26 @@ addressable RGB LEDs - comm pins and 12V? power</text>
 <wire x1="121.92" y1="66.04" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="5"/>
 <wire x1="121.92" y1="149.86" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="53.34" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="40.64" x2="106.68" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-1" pin="KL"/>
+<wire x1="106.68" y1="-7.62" x2="139.7" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-7.62" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="53.34" y1="38.1" x2="104.14" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="38.1" x2="104.14" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-4" pin="KL"/>
+<wire x1="104.14" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-10.16" x2="124.46" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
