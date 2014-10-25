@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1118,9 +1118,9 @@ Grid 5.08 mm&lt;p&gt;
 <text x="180.34" y="83.82" size="1.778" layer="94">3 - H-Bridge (R) 1 PA
 2 - H-Bridge (R) 1 PB
 1 - H-Bridge (R) 1 EA</text>
-<text x="25.4" y="73.66" size="1.778" layer="94">BBB Arduino
-with jumper PRJ
-set for EXT</text>
+<text x="20.32" y="71.12" size="1.778" layer="94">      BBB Arduino
+USB/EXT set to EXT
++5V/EXT set to EXT</text>
 <text x="58.42" y="129.54" size="1.778" layer="94">DC-DC Buck Converter
 set for 12V output</text>
 <text x="-2.54" y="35.56" size="1.778" layer="94">18 - RST
@@ -1137,8 +1137,8 @@ set for 12V output</text>
   7 - Arduino 8 Platform motion ENABLE
   6 - Arduino 9 Right motor F -&gt; SHB 1 PA
   5 - Arduino 10 Right motor R -&gt; SHB 1 PB
-  4 - Arduino 11
-  3 - Arduino 12
+  4 - Arduino 11 Lights CLOCK
+  3 - Arduino 12 Lights DATA
   2 - Arduino 13
   1 - GND</text>
 <text x="66.04" y="-5.08" size="1.778" layer="94">2 - GND

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -80,8 +80,8 @@ Converter</text>
 <text x="6.35" y="22.86" size="1.778" layer="25">  input
 24VDC</text>
 <text x="31.75" y="52.07" size="2.54" layer="25">      BBB Arduino
-power input set to EXT
-power output set to eXT</text>
+USB/EXT set to EXT
++5V/EXT set to EXT</text>
 <text x="5.08" y="72.39" size="1.778" layer="25" rot="R90">lights</text>
 <text x="7.62" y="68.58" size="1.4224" layer="25">DIN 5VDC GND CLK</text>
 </plain>
@@ -564,6 +564,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
